@@ -11,6 +11,8 @@ def call(String input, String color) {
     }
     
     println "debug line"
+    println "${input} ${color}"
+
 
     return "${colors[color]}${input}${colors['reset']}"
 }
