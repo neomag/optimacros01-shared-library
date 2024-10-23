@@ -13,5 +13,4 @@ def call(String input, String color) {
 
     println "${colors[color]}${input}${colors['reset']}"
 
-//    return "${colors[color]}${input}${colors['reset']}"
 }
