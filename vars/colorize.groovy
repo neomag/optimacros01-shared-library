@@ -1,4 +1,4 @@
-def colorize(String input, String color) {
+def colorizeString(String input, String color) {
     def colors = [
         'red': '\u001B[31m',
         'green': '\u001B[32m',
@@ -7,11 +7,8 @@ def colorize(String input, String color) {
     ]
 
     if (!colors.containsKey(color)) {
-        throw new IllegalArgumentException("Unsupported color: $color. Use 'red', 'green', 'blue'.")
+        throw new IllegalArgumentException("Unsupported color: $color. Use 'red', 'green', or 'blue'.")
     }
 
     return "${colors[color]}${input}${colors['reset']}"
 }
-
-// def coloredText = colorizeString("Hello, World!", "green")
-// println coloredText
