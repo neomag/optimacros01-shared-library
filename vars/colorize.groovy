@@ -3,7 +3,7 @@ def call(String input, String color) {
         'red': '\u001B[31m',
         'green': '\u001B[32m',
         'blue': '\u001B[34m',
-        'yellow': 'u\033[33m',
+        'yellow': '\u033[33m',
         'reset': '\u001B[0m'
     ]
 
@@ -11,8 +11,7 @@ def call(String input, String color) {
         throw new IllegalArgumentException("Unsupported color: $color. Use 'red', 'green', or 'blue'.")
     }
     
-    //println "debug line"
-    //println "${input} ${color}"
+
     println "${colors[color]}${input}${colors['reset']}"
 
 
