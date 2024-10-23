@@ -9,6 +9,8 @@ def call(String input, String color) {
     if (!colors.containsKey(color)) {
         throw new IllegalArgumentException("Unsupported color: $color. Use 'red', 'green', or 'blue'.")
     }
+    
+    println "debug line"
 
     return "${colors[color]}${input}${colors['reset']}"
 }
