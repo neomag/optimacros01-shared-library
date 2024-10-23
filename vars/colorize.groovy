@@ -3,7 +3,7 @@ def call(String input, String color) {
         'red': '\u001B[31m',
         'green': '\u001B[32m',
         'blue': '\u001B[34m',
-        'yellow': '\u033[33m',
+        'yellow': '\u001B[33m',
         'reset': '\u001B[0m'
     ]
 
