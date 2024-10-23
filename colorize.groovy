@@ -7,7 +7,7 @@ def colorize(String input, String color) {
     ]
 
     if (!colors.containsKey(color)) {
-        throw new IllegalArgumentException("Unsupported color: $color. Use 'red', 'green', or 'blue'.")
+        throw new IllegalArgumentException("Unsupported color: $color. Use 'red', 'green', 'blue'.")
     }
 
     return "${colors[color]}${input}${colors['reset']}"
